@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🏦 Smart Lender</h1>
+
+    <h2>Loan Approval Prediction Form</h2>
+
+    <form action="/submit" method="POST">
+
+        <label>Gender</label><br>
+        <select name="Gender">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+
+        <br><br>
+
+        <label>Married</label><br>
+        <select name="Married">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <br><br>
+
+        <label>Dependents</label><br>
+        <select name="Dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+        </select>
+
+        <br><br>
+
+        <label>Education</label><br>
+        <select name="Education">
+            <option value="1">Graduate</option>
+            <option value="0">Not Graduate</option>
+        </select>
+
+        <br><br>
+
+        <label>Self Employed</label><br>
+        <select name="Self_Employed">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+
+        <br><br>
+
+        <label>Applicant Income</label><br>
+        <input type="number" name="ApplicantIncome" required>
+
+        <br><br>
+
+        <label>Coapplicant Income</label><br>
+        <input type="number" name="CoapplicantIncome" required>
+
+        <br><br>
+
+        <label>Loan Amount</label><br>
+        <input type="number" name="LoanAmount" required>
+
+        <br><br>
+
+        <label>Loan Amount Term</label><br>
+        <input type="number" name="Loan_Amount_Term" required>
+
+        <br><br>
+
+        <label>Credit History</label><br>
+        <select name="Credit_History">
+            <option value="1">Good</option>
+            <option value="0">Bad</option>
+        </select>
+
+        <br><br>
+
+        <label>Property Area</label><br>
+        <select name="Property_Area">
+            <option value="0">Rural</option>
+            <option value="1">Semiurban</option>
+            <option value="2">Urban</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Predict Loan</button>
+
+    </form>
+    <div class="container">
+
+...your existing form...
+
+</div>
+
+</body>
+</html>
