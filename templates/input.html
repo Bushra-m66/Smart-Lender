@@ -12,86 +12,155 @@
 
     <form action="/submit" method="POST">
 
-        <label>Gender</label><br>
+        <div class="form-row">
+
+    <div class="form-group">
+        <label>Gender</label>
+
         <select name="Gender">
             <option value="0">Male</option>
             <option value="1">Female</option>
         </select>
 
-        <br><br>
+    </div>
 
-        <label>Married</label><br>
+    <div class="form-group">
+
+        <label>Married</label>
+
         <select name="Married">
-            <option value="0">No</option>
             <option value="1">Yes</option>
-        </select>
-
-        <br><br>
-
-        <label>Dependents</label><br>
-        <select name="Dependents">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3+</option>
-        </select>
-
-        <br><br>
-
-        <label>Education</label><br>
-        <select name="Education">
-            <option value="1">Graduate</option>
-            <option value="0">Not Graduate</option>
-        </select>
-
-        <br><br>
-
-        <label>Self Employed</label><br>
-        <select name="Self_Employed">
             <option value="0">No</option>
-            <option value="1">Yes</option>
         </select>
 
-        <br><br>
+    </div>
 
-        <label>Applicant Income</label><br>
-        <input type="number" name="ApplicantIncome" required>
+</div>
 
-        <br><br>
+       <div class="form-row">
 
-        <label>Coapplicant Income</label><br>
-        <input type="number" name="CoapplicantIncome" required>
+<div class="form-group">
 
-        <br><br>
+<label>Dependents</label>
 
-        <label>Loan Amount</label><br>
-        <input type="number" name="LoanAmount" required>
+<select name="Dependents">
 
-        <br><br>
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3+</option>
 
-        <label>Loan Amount Term</label><br>
-        <input type="number" name="Loan_Amount_Term" required>
+</select>
 
-        <br><br>
+</div>
 
-        <label>Credit History</label><br>
-        <select name="Credit_History">
-            <option value="1">Good</option>
-            <option value="0">Bad</option>
-        </select>
+<div class="form-group">
 
-        <br><br>
+<label>Education</label>
 
-        <label>Property Area</label><br>
-        <select name="Property_Area">
-            <option value="0">Rural</option>
-            <option value="1">Semiurban</option>
-            <option value="2">Urban</option>
-        </select>
+<select name="Education">
 
-        <br><br>
+<option value="1">Graduate</option>
 
-        <button type="submit">Predict Loan</button>
+<option value="0">Not Graduate</option>
+
+</select>
+
+</div>
+
+</div>
+        <div class="form-row">
+
+<div class="form-group">
+
+<label>Self Employed</label>
+
+<select name="Self_Employed">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Property Area</label>
+
+<select name="Property_Area">
+
+<option value="0">Rural</option>
+
+<option value="1">Semi Urban</option>
+
+<option value="2">Urban</option>
+
+</select>
+
+</div>
+
+</div>
+
+       <div class="form-row">
+
+<div class="form-group">
+
+<label>Applicant Income</label>
+
+<input type="number" name="ApplicantIncome" required>
+
+</div>
+
+<div class="form-group">
+
+<label>Coapplicant Income</label>
+
+<input type="number" name="CoapplicantIncome" required>
+
+</div>
+
+</div>
+
+        <div class="form-row">
+
+<div class="form-group">
+
+<label>Loan Amount</label>
+
+<input type="number" name="LoanAmount" required>
+
+</div>
+
+<div class="form-group">
+
+<label>Loan Amount Term</label>
+
+<input type="number" name="Loan_Amount_Term" required>
+
+</div>
+
+</div>
+
+        <div class="form-row">
+
+<div class="form-group">
+
+<label>Credit History</label>
+
+<select name="Credit_History">
+
+<option value="1">Good (1)</option>
+
+<option value="0">Bad (0)</option>
+
+</select>
+
+</div>
+
+</div>
+        <input class="submit-btn" type="submit" value="Predict Loan Approval">
 
     </form>
     <div class="container">
