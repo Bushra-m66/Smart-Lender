@@ -93,12 +93,4 @@ The complete project documentation is available inside the **Project_Files** fol
 
 ---
 
-## 👩‍💻 Author
-
-**K Bushra Mehreen**
-
-GitHub: https://github.com/Bushra-m66
-
----
-
 ⭐ If you found this project useful, don't forget to star the repository!
